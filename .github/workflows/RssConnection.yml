@@ -2,6 +2,9 @@ name: LA-Build&Deploy-Dev
 on: push
 jobs:
   LA-BiludAndDeploy-Dev:
+   permissions:
+    contents: read
+    id-token: write
    runs-on: ubuntu-latest
    environment: Development
    steps:
