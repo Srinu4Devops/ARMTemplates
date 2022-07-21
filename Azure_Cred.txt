@@ -1,0 +1,36 @@
+RG-Dev
+
+Location: East US
+
+{
+  "clientId": "b5bd8305-d15f-415f-86aa-d5cf3f7fdc55",
+  "clientSecret": "fSl8Q~R83ZxlGNHlN6qwxa9Dn47Tf430DZ9VMcST",
+  "subscriptionId": "beb2107a-2219-488b-929e-7939bb20b9a2",
+  "tenantId": "8a07628e-b90c-42b1-8f60-bcba25594c29",
+  "activeDirectoryEndpointUrl": "https://login.microsoftonline.com",
+  "resourceManagerEndpointUrl": "https://management.azure.com/",
+  "activeDirectoryGraphResourceId": "https://graph.windows.net/",
+  "sqlManagementEndpointUrl": "https://management.core.windows.net:8443/",
+  "galleryEndpointUrl": "https://gallery.azure.com/",
+  "managementEndpointUrl": "https://management.core.windows.net/"
+}
+
+
+
+RG-Prod
+
+Location: East US
+subscription ID: beb2107a-2219-488b-929e-7939bb20b9a2
+
+{
+  "clientId": "b5bd8305-d15f-415f-86aa-d5cf3f7fdc55",
+  "clientSecret": "GSJ8Q~iBy4h8g2r4LY3oOcviYKLXuvXiBQWdUbEU",
+  "subscriptionId": "beb2107a-2219-488b-929e-7939bb20b9a2",
+  "tenantId": "8a07628e-b90c-42b1-8f60-bcba25594c29",
+  "activeDirectoryEndpointUrl": "https://login.microsoftonline.com",
+  "resourceManagerEndpointUrl": "https://management.azure.com/",
+  "activeDirectoryGraphResourceId": "https://graph.windows.net/",
+  "sqlManagementEndpointUrl": "https://management.core.windows.net:8443/",
+  "galleryEndpointUrl": "https://gallery.azure.com/",
+  "managementEndpointUrl": "https://management.core.windows.net/"
+}
