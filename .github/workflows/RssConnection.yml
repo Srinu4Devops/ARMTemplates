@@ -3,9 +3,7 @@ on:
  workflow_dispatch:
 jobs:
   LA-BiludAndDeploy-Dev:
-   permissions:
-    contents: read
-    id-token: write
+
    runs-on: ubuntu-latest
    environment: Development
    steps:
@@ -14,9 +12,7 @@ jobs:
    
      - uses: azure/login@v1
        with:
-          client-id: ${{ secrets.AZURE_CLIENT_ID }}
-          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
-          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
      
      - name: Deploy ARM Template
        uses: azure/arm-deploy@v1
