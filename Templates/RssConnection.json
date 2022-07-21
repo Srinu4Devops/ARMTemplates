@@ -1,0 +1,42 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "connections_rss_name": {
+            "defaultValue": "rss",
+            "type": "String"
+        }
+    },
+    "variables": {},
+    "resources": [
+        {
+            "type": "Microsoft.Web/connections",
+            "apiVersion": "2016-06-01",
+            "name": "[parameters('connections_rss_name')]",
+            "location": "eastus",
+            "kind": "V1",
+            "properties": {
+                "displayName": "RSS",
+                "statuses": [
+                    {
+                        "status": "Connected"
+                    }
+                ],
+                "customParameterValues": {},
+                "nonSecretParameterValues": {},
+                "createdTime": "",
+                "changedTime": "",
+                "api": {
+                    "name": "[parameters('connections_rss_name')]",
+                    "displayName": "RSS",
+                    "description": "RSS is a popular web syndication format used to publish frequently updated content – like blog entries and news headlines.  Many content publishers provide an RSS feed to allow users to subscribe to it.  Use the RSS connector to retrieve feed information and trigger flows when new items are published in an RSS feed.",
+                    "iconUri": "[concat('https://connectoricons-prod.azureedge.net/releases/v1.0.1567/1.0.1567.2748/', parameters('connections_rss_name'), '/icon.png')]",
+                    "brandColor": "#ff9900",
+                    "id": "[concat('/subscriptions/beb2107a-2219-488b-929e-7939bb20b9a2/providers/Microsoft.Web/locations/eastus/managedApis/', parameters('connections_rss_name'))]",
+                    "type": "Microsoft.Web/locations/managedApis"
+                },
+                "testLinks": []
+            }
+        }
+    ]
+}
