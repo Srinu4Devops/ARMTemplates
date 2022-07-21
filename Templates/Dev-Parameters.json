@@ -3,7 +3,10 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "connections_rss_name": {
-            "value": "Dev-Rss"
+            "value": "rss"
+        },
+        "location": {
+            "value": "westus"
         }
     }
 }
