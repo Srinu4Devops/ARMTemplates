@@ -7,6 +7,9 @@
         },
         "location": {
             "value": "westus"
+        },
+        "displayName": {
+            "value": "Dev-Rss"
         }
     }
 }

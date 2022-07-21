@@ -10,6 +10,12 @@
             "type": "string",
             "metadata": {
                 "description": "description"
+            },
+        },
+        "displayName": {
+            "type": "string",
+            "metadata": {
+                "description": "Display Name"
             }
         }
     },
@@ -22,7 +28,7 @@
             "location": "[parameters('location')]",
             "kind": "V1",
             "properties": {
-                "displayName": "RSS",
+                "displayName": "[parameters('displayName')]",
                 "statuses": [
                     {
                         "status": "Connected"
@@ -34,7 +40,7 @@
                 "changedTime": "",
                 "api": {
                     "name": "[parameters('connections_rss_name')]",
-                    "displayName": "RSS",
+                    "displayName": "[parameters('displayName')]",
                     "description": "RSS is a popular web syndication format used to publish frequently updated content – like blog entries and news headlines.  Many content publishers provide an RSS feed to allow users to subscribe to it.  Use the RSS connector to retrieve feed information and trigger flows when new items are published in an RSS feed.",
                     "iconUri": "[concat('https://connectoricons-prod.azureedge.net/releases/v1.0.1567/1.0.1567.2748/', parameters('connections_rss_name'), '/icon.png')]",
                     "brandColor": "#ff9900",
