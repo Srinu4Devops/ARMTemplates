@@ -6,7 +6,7 @@
             "value": "westeurope"
         },
         "storageAccount_name": {
-            "value": "ktblogstorageaccount-prod"
+            "value": "prodstoragedemo"
         },
         "storageAccount_sku_name": {
             "value": "Standard_GRS"
