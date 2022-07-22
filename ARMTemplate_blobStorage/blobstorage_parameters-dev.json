@@ -6,7 +6,7 @@
             "value": "westeurope"
         },
         "storageAccount_name": {
-            "value": "devstoragedemo"
+            "value": "devstoredev"
         },
         "storageAccount_sku_name": {
             "value": "Standard_GRS"
