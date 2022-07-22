@@ -17,6 +17,12 @@
             "metadata": {
                 "description": "Resource"
             }
+        },
+        "displayName": {
+            "type": "string",
+            "metadata": {
+                "description": "displayName"
+            }
         }
     },
     "variables": {},
@@ -28,7 +34,7 @@
             "location": "eastus",
             "kind": "V1",
             "properties": {
-                "displayName": "[parameters('connections_gmail_name')]",
+                "displayName": "[parameters('displayName')]",
                 "statuses": [
                     {
                         "status": "Connected"
