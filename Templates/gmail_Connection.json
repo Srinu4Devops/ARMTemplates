@@ -1,0 +1,54 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {},
+    "functions": [],
+    "variables": {},
+    "resources": [
+        {
+            "apiVersion": "2016-06-01",
+            "kind":"V1",
+           "properties":{
+            "displayName":"gmail",
+           "authenticatedUser":{"name":"sreenimanda6@gmail.com"},
+           "overallStatus":"Connected",
+           "parameterValueSet":{"name":"shared-application",
+           "values":{"token":{"value":"https://global.consent.azure-apim.net/redirect/gmail"}}},
+        "createdTime":"2022-07-21T17:09:08.907Z",
+        "changedTime":"2022-07-22T05:10:26.261Z",
+        "api":{
+            "name":"gmail",
+            "displayName":"Gmail",
+            "description":"Gmail is a web-based email service from Google. With the Gmail connector, you can perform actions such as send or receive e-mail messages, and trigger flows on new e-mails.","iconUri":"https://connectoricons-prod.azureedge.net/releases/v1.0.1571/1.0.1571.2770/gmail/icon.png",
+            "brandColor":"#20427f",
+            "category":"Standard",
+           "id":"/subscriptions/beb2107a-2219-488b-929e-7939bb20b9a2/providers/Microsoft.Web/locations/eastus/managedApis/gmail",
+           "type":"Microsoft.Web/locations/managedApis"
+        },
+        "testLinks":[
+            {
+            "requestUri":"https://management.azure.com:443/subscriptions/beb2107a-2219-488b-929e-7939bb20b9a2/resourceGroups/LA-Dev/providers/Microsoft.Web/connections/gmail/extensions/proxy/TestConnection?api-version=2018-07-01-preview",
+            "method":"get"
+        }
+        ],
+        "testRequests":[
+        {
+            "body":{
+                "request":{
+                    "method":"get",
+                    "path":"TestConnection"
+                }
+            },
+        "requestUri":"https://management.azure.com:443/subscriptions/beb2107a-2219-488b-929e-7939bb20b9a2/resourceGroups/LA-Dev/providers/Microsoft.Web/connections/gmail/dynamicInvoke?api-version=2018-07-01-preview",
+        "method":"POST"
+         }
+        ]
+    },
+    "id":"/subscriptions/beb2107a-2219-488b-929e-7939bb20b9a2/resourceGroups/LA-Dev/providers/Microsoft.Web/connections/gmail",
+    "name":"gmail",
+    "type":"Microsoft.Web/connections",
+    "location":"eastus"
+    }
+    ],
+    "outputs": {}
+}

@@ -34,3 +34,7 @@ subscription ID: beb2107a-2219-488b-929e-7939bb20b9a2
   "galleryEndpointUrl": "https://gallery.azure.com/",
   "managementEndpointUrl": "https://management.core.windows.net/"
 }
+
+
+storageaccountdemoa:
+Access Key: 7LWKYlXC8ioKSvX0P7DUDwOgf2tBfO/s/YdSx808bkQFYH5rQ/hwszg61u3w8E508KTCqzxX+Ks9+AStJofmdA==
