@@ -1,5 +1,6 @@
 name: LA-Build&Deploy-Dev
-on: [push]
+on: 
+ workflow_dispatch:
 jobs:
   LA-BiludAndDeploy-Dev:
 
