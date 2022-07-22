@@ -18,7 +18,7 @@ jobs:
        with:
           subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
           resourceGroupName: ${{ secrets.AZURE_RG }}
-          template: ./Templates/RssConnection.json
+          template: ./Templates/GmailConnection.json
           parameters: ./Templates/Dev-Parameters.json
   LA-BiludAndDeploy-prod:
     runs-on: ubuntu-latest
@@ -37,5 +37,5 @@ jobs:
           with:
             subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
             resourceGroupName: ${{ secrets.AZURE_RG }}
-            template: ./Templates/RssConnection.json
+            template: ./Templates/GmailConnection.json
             parameters: ./Templates/Prod-Pramaters.json
