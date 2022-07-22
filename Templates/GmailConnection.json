@@ -1,0 +1,58 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "connections_gmail_name": {
+            "defaultValue": "gmail",
+            "type": "String"
+        },
+        "sub-id": {
+            "type": "string",
+            "metadata": {
+                "description": "Subscription ID"
+            }
+        },
+        "rg": {
+            "type": "string",
+            "metadata": {
+                "description": "Resource"
+            }
+        }
+    },
+    "variables": {},
+    "resources": [
+        {
+            "type": "Microsoft.Web/connections",
+            "apiVersion": "2016-06-01",
+            "name": "[parameters('connections_gmail_name')]",
+            "location": "eastus",
+            "kind": "V1",
+            "properties": {
+                "displayName": "[parameters('connections_gmail_name')]",
+                "statuses": [
+                    {
+                        "status": "Connected"
+                    }
+                ],
+                "customParameterValues": {},
+                "createdTime": "",
+                "changedTime": "",
+                "api": {
+                    "name": "[parameters('connections_gmail_name')]",
+                    "displayName": "Gmail",
+                    "description": "Gmail is a web-based email service from Google. With the Gmail connector, you can perform actions such as send or receive e-mail messages, and trigger flows on new e-mails.",
+                    "iconUri": "[concat('https://connectoricons-prod.azureedge.net/releases/v1.0.1571/1.0.1571.2770/', parameters('connections_gmail_name'), '/icon.png')]",
+                    "brandColor": "#20427f",
+                    "id": "[concat('/subscriptions/', parameters('sub-id'),'/providers/Microsoft.Web/locations/eastus/managedApis/', parameters('connections_gmail_name'))]",
+                    "type": "Microsoft.Web/locations/managedApis"
+                },
+                "testLinks": [
+                    {
+                        "requestUri": "[concat('https://management.azure.com:443/subscriptions/',parameters('sub-id'), '/resourceGroups/', parameters('rg'),'/providers/Microsoft.Web/connections/', parameters('connections_gmail_name'), '/extensions/proxy/TestConnection?api-version=2016-06-01')]",
+                        "method": "get"
+                    }
+                ]
+            }
+        }
+    ]
+}

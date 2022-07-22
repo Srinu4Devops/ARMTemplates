@@ -10,6 +10,12 @@
         },
         "displayName": {
             "value": "Prod-Rss"
+        },
+        "sub-id": {
+            "value": "beb2107a-2219-488b-929e-7939bb20b9a2"
+        },
+        "rg": {
+            "value": "RG-Dev"
         }
     }
 }
