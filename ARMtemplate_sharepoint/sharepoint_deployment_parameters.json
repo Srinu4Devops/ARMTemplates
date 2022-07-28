@@ -8,7 +8,7 @@
             "value": "sharepoint"
         },
         "location": {
-            "value": "eastus"
+            "value": "centralus"
         },
         "displayName": {
             "value": "Prod-Rss"
