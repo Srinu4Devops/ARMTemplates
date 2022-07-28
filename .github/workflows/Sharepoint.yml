@@ -1,4 +1,4 @@
-name: Storage Account Creation
+name: Sharepoint
 on: 
  workflow_dispatch:
 jobs:
