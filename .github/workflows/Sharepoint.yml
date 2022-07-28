@@ -1,6 +1,9 @@
 name: Sharepoint
 on: 
  workflow_dispatch:
+ push:
+   branches-ignore:
+     - 'Sharepoint'
 jobs:
   Sharepoint-Dev:
 
