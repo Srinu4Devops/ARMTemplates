@@ -55,10 +55,10 @@
                 "api": {
                     "name": "[parameters('connections_datafactory_name')]",
                     "displayName": "[parameters('displayName')]",
-                    "description": "SharePoint helps organizations share and collaborate with colleagues, partners, and customers. You can connect to SharePoint Online or to an on-premises SharePoint 2013 or 2016 farm using the On-Premises Data Gateway to manage documents and list items.",
-                    "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1588/1.0.1588.2938/sharepointonline/icon.png",  //"[concat('https://connectoricons-prod.azureedge.net/releases/v1.0.1588/1.0.1588.2938/sharepointonline/', parameters('connections_datafactory_name'), '/icon.png')]",
-                    "brandColor": "#036C70",
-                    "id": "/subscriptions/beb2107a-2219-488b-929e-7939bb20b9a2/providers/Microsoft.Web/locations/centralus/managedApis/azuredatafactory",  //"[concat('/subscriptions/',parameters('sub-id'),'/providers/Microsoft.Web/locations/eastus/managedApis/sharepointonline/', parameters('connections_datafactory_name'))]",
+                    "description": "Azure Data Factory is a hybrid data integration service that allows you to create, schedule and orchestrate your ETL/ELT workflows at scale wherever your data lives, in cloud or self-hosted network.",
+                    "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1515/1.0.1515.2556/azuredatafactory/icon.png",
+                    "brandColor": "#24A9E0",
+                    "id": "/subscriptions/beb2107a-2219-488b-929e-7939bb20b9a2/providers/Microsoft.Web/locations/centralus/managedApis/azuredatafactory",
                     "type": "Microsoft.Web/locations/managedApis"
                 },
                 "testLinks": []

@@ -42,7 +42,7 @@
             "location": "[parameters('location')]",
             "kind": "V2",
             "properties": {
-                "displayName": "[parameters('displayName')]",
+                "displayName": "mothitejavath@gmail.com"   //"[parameters('displayName')]",
                 "statuses": [
                     {
                         "status": "Connected"
