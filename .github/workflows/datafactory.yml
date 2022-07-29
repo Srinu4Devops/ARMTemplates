@@ -1,0 +1,27 @@
+name: DataFactory
+on: 
+ workflow_dispatch:
+ push:
+   branches-ignore:
+     - 'Sharepoint'
+jobs:
+  DataFactory-Dev:
+
+   runs-on: ubuntu-latest
+   environment: Development
+   steps:
+     - name: Checkout source code 
+       uses: actions/checkout@master
+   
+     - uses: azure/login@v1
+       with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+     
+     - name: Deploy DataFactory Template
+       uses: azure/arm-deploy@v1
+       with:
+          subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+          resourceGroupName: ${{ secrets.AZURE_RG }}
+          template: ./ARMtemplate_DataFactory/datafactory_deployment_template.json
+          parameters: ./ARMtemplate_DataFactory/datafactory_deployment_parameters.json
+        
