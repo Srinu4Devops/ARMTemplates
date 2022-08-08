@@ -66,3 +66,9 @@
         }
     ]
 }
+
+
+resource "azurerm_rg" "rg-sharepoint" {
+    name = "dev-sharepoint-rg"
+    location = "eastus"
+}
